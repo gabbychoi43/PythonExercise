@@ -1,7 +1,6 @@
 import sys
 
 sys.stdin=open('sample_input5644.txt','r')
-
 def dist(xy,x2y2,C) :
     x1,y1=xy
     x2,y2=x2y2
@@ -60,27 +59,29 @@ class Move() :
 
     def Charging(self,M):
         for i in range(len(self.A)) :
-            tempA=[0]
-            tempB=[0]
+            tempA=[(0,0)]
+            tempB=[(0,0)]
             locA=self.A[i]
             locB=self.B[i]
             for k in self.Chargers :
+                x=k.center
                 k=k.range
                 if locA in k.keys() :
-                    tempA.append(k[locA])
+                    tempA.append((x,k[locA]))
                 if locB in k.keys() :
-                    tempB.append(k[locB])
-            if tempA==tempB :
-                self.s+=max(tempA)
-            else :
-                temp=[]
-                for k in tempA :
-                    for j in tempB :
-                        if k!=j :
-                            temp.append(k+j)
+                    tempB.append((x,k[locB]))
+            temp=[0]
+            for k in tempA :
+                for j in tempB :
+                    if k[1]!=j[1] :
+                        temp.append(k[1]+j[1])
+                    elif k[1]==j[1] :
+                        if k[0]==j[0] :
+                            temp.append(k[1])
+                        else :
+                            temp.append(2*k[1])
 
-                self.s+=max(temp)
-
+            self.s+=max(temp)
 
 
 
@@ -106,6 +107,7 @@ for test_case in range(1,T+1) :
         x,y,c,cap=map(int, input().split())
         AP.append(Charger(x,y,c,cap))
         AP[i].setrange(AP[i].center[0],AP[i].center[1])
+
 
 
 
