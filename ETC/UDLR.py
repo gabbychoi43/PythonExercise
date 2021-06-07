@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('UDLR','r')
+sys.stdin=open('UDLR', 'r')
 
 T=int(input())
 

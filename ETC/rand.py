@@ -1,7 +1,7 @@
 import random
 
 
-f=open('what','r',encoding='UTF-8')
+f=open('what', 'r', encoding='UTF-8')
 
 lines=f.readlines()
 
@@ -12,7 +12,7 @@ f.close()
 
 
 
-f=open('names','r',encoding='UTF-8')
+f=open('names', 'r', encoding='UTF-8')
 
 lines=f.readlines()
 

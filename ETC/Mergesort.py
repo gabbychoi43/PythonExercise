@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('Mergesort','r')
+sys.stdin=open('Mergesort', 'r')
 
 def mergesort(Data) :
     if len(Data)<=1 :

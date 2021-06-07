@@ -1,7 +1,7 @@
 
 
 import sys
-sys.stdin=open('subsum','r')
+sys.stdin=open('subsum', 'r')
 
 def twentyone(array, num):
     if num < 0:

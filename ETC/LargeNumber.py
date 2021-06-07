@@ -1,7 +1,7 @@
 
 import sys
 
-sys.stdin=open('LargeNumber','r')
+sys.stdin=open('LargeNumber', 'r')
 
 T=int(input())
 

@@ -1,6 +1,6 @@
 
 import sys
-sys.stdin=open('Happybox','r')
+sys.stdin=open('Happybox', 'r')
 
 
 

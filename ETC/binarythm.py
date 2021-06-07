@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('binaryThm','r')
+sys.stdin=open('binaryThm', 'r')
 
 
 T=int(input())

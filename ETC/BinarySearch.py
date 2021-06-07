@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('binary','r')
+sys.stdin=open('binary', 'r')
 
 def binarysearch(target,List) :
     left=0

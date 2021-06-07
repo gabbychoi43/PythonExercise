@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('Knight','r')
+sys.stdin=open('Knight', 'r')
 
 T=int(input())
 

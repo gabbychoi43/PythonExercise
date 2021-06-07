@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('Playing','r')
+sys.stdin=open('Playing', 'r')
 
 
 T=int(input())

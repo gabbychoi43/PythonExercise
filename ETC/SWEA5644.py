@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('sample_input5644.txt','r')
+sys.stdin=open('sample_input5644.txt', 'r')
 def dist(xy,x2y2,C) :
     x1,y1=xy
     x2,y2=x2y2

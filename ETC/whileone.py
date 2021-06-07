@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('whileone','r')
+sys.stdin=open('whileone', 'r')
 
 T=int(input())
 

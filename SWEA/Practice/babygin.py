@@ -3,7 +3,7 @@ import sys
 
 
 
-sys.stdin=open('Babygin','r')
+sys.stdin=open('Babygin', 'r')
 
 def babygin(A,B) :
 
