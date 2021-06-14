@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin=open('미로탐색','r')
+sys.stdin=open('미로탐색', 'r')
 
 from collections import deque
 
